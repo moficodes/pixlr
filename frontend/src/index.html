@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Pixlr</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <img id="myImage"/>
+        <div id="canvasImage"></div>
+        <div class="control">
+            <input type="text" id="width" placeholder="32"/>
+            <input type="text" id="height" placeholder="32"/>
+            <input type="checkbox" id="lock" checked/>
+            <input type="button" id="create" value="Create"/>
+            <input type="button" id="clear" value="Clear"/>
+            <label for="filepicker">Select File</label>
+            <input type="file" id="filepicker" accept="image/*"/>
+            
+        </div>
+        <div class="colors" id="colors">
+          <label for="colorpicker">Color Picker:</label>
+          <input type="color" id="colorpicker" value="#0000ff">
+        </div>
+
+        <div id="canvas">
+
+        </div>
+
+        <canvas id="cvs"></canvas>
+    </div>
+  </body>
+</html>
